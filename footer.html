@@ -1,3 +1,211 @@
-<footer>
-  <p>&copy; 2025 My Website. All rights reserved.</p>
-</footer>
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Figma</title>
+  <style>
+    /* ===== Footer Style ===== */
+    body {
+      margin: 0;
+      font-family: "Brfirma", sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      width: 1280px;
+      margin: 0 auto;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+
+    /* Khung trên */
+    .footer-top {
+      width: 1185px;
+      height: 68px;
+      background: #fff;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-top a.logo {
+      width: 150px;
+      height: 68px;
+      background: #ccc;
+      text-align: center;
+      line-height: 68px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      font-size: 28px;
+    }
+
+    /* Khối chính */
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      width: 1185px;
+      margin: 40px auto 0;
+      gap: 20px;
+    }
+
+    .footer-col {
+      height: 221px;
+    }
+
+    .footer-col h3 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .footer-col a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .footer-col:last-child {
+      width: 339px;
+    }
+
+    /* Input + Button cùng hàng */
+    .footer-col .subscribe {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 420px;
+      /* tổng chiều ngang input + nút */
+    }
+
+    .footer-col input[type="email"] {
+      flex: 1;
+      height: 50px;
+      padding: 0 12px;
+      border: none;
+      background: #000;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .footer-col button {
+      height: 50px;
+      padding: 0 22px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+      font-size: 20px;
+      /* chữ to hơn */
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .footer-col button:hover {
+      background: #333;
+    }
+
+    /* Icon tròn */
+    .footer-col .icons {
+      margin-top: 25px;
+      width: 100%;
+      max-width: 420px;
+      /* khớp đúng với chiều ngang của subscribe */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-col .icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #000;
+      transition: 0.2s;
+    }
+
+    .footer-col .icons a:hover {
+      background: #333;
+    }
+
+    /* Phần dưới cùng */
+    .footer-bottom {
+      text-align: center;
+      margin-top: 80px;
+      /* đẩy xuống xa hơn */
+    }
+
+    .footer-bottom .line {
+      width: 500px;
+      height: 1px;
+      background: #000;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .footer-bottom span {
+      font-family: "Bree Serif", serif;
+      font-size: 20px;
+      margin: 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer>
+    <div class="footer-top">
+      <a href="#" class="logo">Logo</a>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-col">
+        <h3>Sản phẩm</h3>
+        <a href="#">Tên sản phẩm...</a>
+        <a href="#">Tên sản phẩm...</a>
+        <a href="#">Tên sản phẩm...</a>
+      </div>
+      <div class="footer-col">
+        <h3>Công ty</h3>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Đối tác</a>
+        <a href="#">Tin tức</a>
+      </div>
+      <div class="footer-col">
+        <h3>Hỗ trợ</h3>
+        <a href="#cdsiod">Trung tâm hỗ trợ</a>
+        <a href="#">Chính sách người dùng</a>
+      </div>
+      <div class="footer-col">
+        <h3>Đăng ký nhận ưu đãi và tin tức mới nhất!</h3>
+        <div class="subscribe">
+          <input type="email" placeholder="Nhập email">
+          <button>Subscribe</button>
+        </div>
+        <div class="icons">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="line"></div>
+      <span>2025 @ All rights reserved</span>
+      <div class="line"></div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
