@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main>
+    <h2>Chào mừng bạn đến với trang chủ!</h2>
+    <p>Đây là ví dụ về cách chèn Header và Footer tự động bằng JavaScript.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    // Tải header và footer
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
+</html>
